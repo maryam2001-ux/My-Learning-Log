@@ -1,0 +1,17 @@
+{
+  "name": "my-learning-log",
+  "version": "1.0.0",
+  "description": "This repository serves as my digital brain and central reference for everything I learn in my journey as a Front-end Developer.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.2.0",
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.3.8"
+  }
+}
