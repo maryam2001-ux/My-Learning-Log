@@ -37,7 +37,7 @@ This repository serves as my digital brain and central reference for everything 
 ## THE MAIN GITHUB COMMANDS *
 
 git init
-git remote add origin https://github.com/YourUserName/My-Learning-Log.git
+[git remote add origin https://github.com/maryam2001-ux/My-Learning-Log.git](https://github.com/maryam2001-ux/My-Learning-Log.git)
 git add .
 git commit -m "Add my first bootstrap template"
 git push -u origin main
