@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form To Table</title>
+     <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../../../node_modules/animate.css/animate.min.css">
+    
+</head>
+<body>
+
+<div class="container mt-5">
+
+    <!-- Form -->
+    <form class="row g-3" id="formData">
+
+        <div class="col-md-6">
+            <label class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstName" required>
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastName" required>
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">City</label>
+            <input type="text" class="form-control" id="city" required>
+        </div>
+
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Add To Table</button>
+        </div>
+
+    </form>
+
+    <hr class="my-5">
+
+    <!-- Table -->
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <!-- JS will add rows here -->
+        </tbody>
+    </table>
+
+</div>
+
+<script src="../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./form.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO - LIST </title>
+    
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../../../node_modules/animate.css/animate.min.css">
+    
+    <style>
+        body { padding: 20px; background-color: #f8f9fa; }
+        .welcome-card { max-width: 600px; margin: 50px auto; }
+    </style>
+</head>
+<body class="bg-light">
+
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8">
+
+        <div class="card shadow-sm">
+          <div class="card-body p-4">
+
+            <!-- Title -->
+            <div class="text-center mb-4">
+              <h1 class="h3 mb-2">Todo List App</h1>
+              <p class="text-muted mb-0">
+                Add, search, update, and delete your tasks
+              </p>
+            </div>
+
+            <!-- Add Task Section -->
+            <div class="mb-4">
+              <label for="taskInput" class="form-label">New Task</label>
+              <div class="input-group">
+                <input  type="text"  id="taskInput"  class="form-control"  placeholder="Enter a new task" />  
+                <button id="addBtn" class="btn btn-primary" type="button"> Add  </button> 
+              </div>
+            </div>
+
+            <!-- Search Section -->
+            <div class="mb-4">
+              <label for="searchInput" class="form-label">Search Task</label>
+              <input type="text" id="searchInput" class="form-control"  placeholder="Search by task title" /> 
+            </div>
+
+            <!-- Tasks Table -->
+            <div class="table-responsive">
+              <table class="table table-bordered table-hover align-middle text-center mb-0">
+                <thead class="table-light">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Task</th>
+                    <th scope="col">Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="taskTableBody"> 
+                  <tr id="emptyRow">
+                    <td colspan="3" class="text-muted">No tasks added yet.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+    <script src="./todo.js"></script>
+
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

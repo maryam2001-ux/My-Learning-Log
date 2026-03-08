@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../../../node_modules/animate.css/animate.min.css">
+        
+</head>
+<body>
+
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+
+      <div class="card shadow-sm">
+        <div class="card-body">
+
+          <!-- Display -->
+          <input type="text"  class="form-control text-end fs-3 mb-3"  id="display"  value="0"   readonly  />
+
+          <!-- Buttons -->
+          <div class="row g-2" id="keys">
+
+            <!-- Row 1 -->
+            <div class="col-3"><button class="btn btn-light w-100 py-3" data-action="clear">C</button></div>
+            <div class="col-3"><button class="btn btn-light w-100 py-3" data-action="backspace">⌫</button></div>
+            <div class="col-3"><button class="btn btn-light w-100 py-3" data-op="/">/</button></div>
+            <div class="col-3"><button class="btn btn-light w-100 py-3" data-op="*">*</button></div>
+
+            <!-- Row 2 -->
+            <div class="col-3"><button class="btn btn-outline-secondary w-100 py-3" data-num="7">7</button></div>
+            <div class="col-3"><button class="btn btn-outline-secondary w-100 py-3" data-num="8">8</button></div>
+            <div class="col-3"><button class="btn btn-outline-secondary w-100 py-3" data-num="9">9</button></div>
+            <div class="col-3"><button class="btn btn-light w-100 py-3" data-op="-">-</button></div>
+
+            <!-- Row 3 -->
+            <div class="col-3"><button class="btn btn-outline-secondary w-100 py-3" data-num="4">4</button></div>
+            <div class="col-3"><button class="btn btn-outline-secondary w-100 py-3" data-num="5">5</button></div>
+            <div class="col-3"><button class="btn btn-outline-secondary w-100 py-3" data-num="6">6</button></div>
+            <div class="col-3"><button class="btn btn-light w-100 py-3" data-op="+">+</button></div>
+
+            <!-- Row 4 -->
+            <div class="col-3"><button class="btn btn-outline-secondary w-100 py-3" data-num="1">1</button></div>
+            <div class="col-3"><button class="btn btn-outline-secondary w-100 py-3" data-num="2">2</button></div>
+            <div class="col-3"><button class="btn btn-outline-secondary w-100 py-3" data-num="3">3</button></div>
+            <div class="col-3"><button class="btn btn-primary w-100 py-3" data-action="equal">=</button></div>
+
+            <!-- Row 5 -->
+            <div class="col-6"><button class="btn btn-outline-secondary w-100 py-3" data-num="0">0</button></div>
+            <div class="col-3"><button class="btn btn-outline-secondary w-100 py-3" data-num=".">.</button></div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div> 
+
+
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./calculator.js"></script>
+</body>
+</html>
